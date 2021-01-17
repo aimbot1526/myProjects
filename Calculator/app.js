@@ -10,10 +10,10 @@ app.get('/', (req, res) => {
 });
 
 app.post('/', (req, res) => {
-    var num1 = Number(req.body.num1);
-    var num2 = Number(req.body.num2);
+    const num1 = Number(req.body.num1);
+    const num2 = Number(req.body.num2);
 
-    var result = num1 + num2;
+    const result = num1 + num2;
     
     res.send(`The result is ${result}`);
 });
